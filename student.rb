@@ -1,6 +1,7 @@
 require_relative 'Person'
 class Student < Person
   attr_reader :classroom
+
   def initialize(age, name: 'Unknown', parent_permission: true)
     super(age, name, parent_permission: parent_permission)
   end
@@ -14,4 +15,3 @@ class Student < Person
     classroom.students << self
   end
 end
-
