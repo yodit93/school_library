@@ -23,3 +23,8 @@ person2 = Person.new(20, 'Jony', parent_permission: true)
 p person2.rentals
 person2.add_rental(rental)
 p person2.rentals.length
+book2 = Book.new('The Hobbit', 'J. R. R. Tolkien')
+rental2 = Rental.new('2021-09-28', person2, book2)
+book2.add_rental(rental2)
+p book2.rentals.first.book.title
+p book2.rentals.last.book.title
