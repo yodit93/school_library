@@ -1,6 +1,7 @@
 require_relative 'nameable'
 require_relative 'trimmer_decorator'
 require_relative 'capitalize_decorator'
+require_relative 'rental'
 class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id, :rentals
