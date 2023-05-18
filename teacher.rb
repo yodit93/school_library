@@ -1,6 +1,8 @@
-require 'Person'
-class Teacher
-  def initializer(age, specialization, name)
+require_relative 'person'
+class Teacher < Person
+  attr_accessor :specialization
+
+  def initialize(age, specialization, name)
     super(age, name)
     @specialization = specialization
   end
