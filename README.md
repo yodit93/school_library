@@ -84,6 +84,8 @@ You can deploy this project using: **Not available**.
 
 <!-- AUTHORS -->
 
+## 👥 Authors <a name="authors"></a>
+
 👤 Yodit Abebe
 
 - GitHub: [yodit93](https://github.com/yodit93)

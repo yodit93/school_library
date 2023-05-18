@@ -112,3 +112,8 @@ class App
     end
   end
 end
+app = App.new
+app.create_person
+app.list_people
+app.create_book
+app.list_books
