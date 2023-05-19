@@ -5,16 +5,22 @@ require_relative 'book'
 require_relative 'rental'
 
 class App
+  def initialize
+    @books = []
+    @people = []
+    @rentals = []
+  end
+
   def list_books
     puts 'List of books:'
-    Book.all.each do |book|
+    @books.each do |book|
       puts "Title: #{book.title}, Author: #{book.author}"
     end
   end
 
   def list_people
     puts 'List of people:'
-    Person.all.each do |person|
+    @people.each do |person|
       if person.respond_to?(:specialization)
         print '[Teacher] '
       else
@@ -46,7 +52,8 @@ class App
     name = gets.chomp
     puts 'Has parent permission? [Y/N]:'
     parent_permission = gets.chomp.downcase == 'y'
-    Student.new(age, name: name, parent_permission: parent_permission)
+    student = Student.new(age, name: name, parent_permission: parent_permission)
+    @people << student
   end
 
   def create_teacher
@@ -56,7 +63,8 @@ class App
     name = gets.chomp
     puts 'Specialization:'
     specialization = gets.chomp
-    Teacher.new(age, name, specialization)
+    teacher = Teacher.new(age, name, specialization)
+    @people << teacher
   end
 
   def create_book
@@ -64,7 +72,8 @@ class App
     title = gets.chomp
     puts 'Author:'
     author = gets.chomp
-    Book.new(title, author)
+    book = Book.new(title, author)
+    @books << book
     puts 'Book created succesfully'
   end
 
@@ -73,22 +82,23 @@ class App
     person = selected_person
     puts 'Date: '
     date = gets.chomp
-    Rental.new(date, person, book)
+    rental = Rental.new(date, person, book)
+    @rentals << rental
     puts 'Rental created succesfully'
   end
 
   def selected_book
     puts 'Select a book from the following list by number'
-    Book.all.each_with_index do |book, index|
+    @books.each_with_index do |book, index|
       puts "(#{index}) Title: #{book.title}, Author: #{book.author}"
     end
     choice = gets.chomp.to_i
-    Book.all[choice]
+    @books[choice]
   end
 
   def selected_person
     puts 'Select a person from the following list by number (not id)'
-    Person.all.each_with_index do |person, index|
+    @people.each_with_index do |person, index|
       if person.respond_to?(:specialization)
         puts "(#{index}) [Teacher] Name: #{person.name}, ID #{person.id}, Age: #{person.age}"
       else
@@ -96,14 +106,14 @@ class App
       end
     end
     choice = gets.chomp.to_i
-    Person.all[choice]
+    @people[choice]
   end
 
   def list_rentals
     puts 'Please enter the person id:'
     id = gets.chomp.to_i
     puts 'Rentals:'
-    Person.all.each do |person|
+    @people.each do |person|
       next unless person.id == id
 
       person.rentals.each do |rental|
@@ -112,8 +122,3 @@ class App
     end
   end
 end
-app = App.new
-app.create_person
-app.list_people
-app.create_book
-app.list_books
