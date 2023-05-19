@@ -114,7 +114,7 @@ class App
     id = gets.chomp.to_i
     puts 'Rentals:'
     @people.each do |person|
-      next unless person.id == id
+      next unless person.id !== id
 
       person.rentals.each do |rental|
         puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.person.name}"

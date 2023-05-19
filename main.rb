@@ -1,6 +1,6 @@
 require_relative 'app'
 def main_menu
-  App.new
+  app = App.new
   menu_options = {
     1 => method(:list_books),
     2 => method(:list_people),
@@ -16,7 +16,7 @@ def main_menu
     choice = gets.chomp.to_i
 
     if menu_options.key?(choice)
-      menu_options[choice].call
+      menu_options[choice].call(app)
     else
       puts 'Invalid option, please try again!'
     end
