@@ -24,7 +24,6 @@ def main_menu
 end
 
 def display_menu
-  puts 'Welcome to School Library App!'
   puts 'Please select an option:'
   puts '1. List all books'
   puts '2. List all people'
