@@ -34,7 +34,7 @@
 <details>
 <summary>Client</summary>
   <ul>
-    <li><a href="#">Ruby</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
 </details>
 
@@ -84,11 +84,13 @@ You can deploy this project using: **Not available**.
 
 <!-- AUTHORS -->
 
+## 👥 Authors <a name="authors"></a>
+
 👤 Yodit Abebe
 
 - GitHub: [yodit93](https://github.com/yodit93)
 - Twitter: [@yodtwit](https://twitter.com/yodtwit)
-- LinkedIn: [Yodit Abebe](linkedin.com/in/yodit-abebe-a97a68140)
+- LinkedIn: [Yodit Abebe](https://www.linkedin.com/in/yodit-abebe-ayalew/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
