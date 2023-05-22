@@ -2,24 +2,24 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[school\_library\] ](#-school_library-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+      - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -91,6 +91,12 @@ You can deploy this project using: **Not available**.
 - GitHub: [yodit93](https://github.com/yodit93)
 - Twitter: [@yodtwit](https://twitter.com/yodtwit)
 - LinkedIn: [Yodit Abebe](https://www.linkedin.com/in/yodit-abebe-ayalew/)
+
+👤 Nahom
+
+- GitHub: [zdnahom](https://github.com/zdnahom)
+- Twitter: [@nahom11](https://twitter.com/Nahomzerihun11)
+- LinkedIn: [Nahom Zerihun](https://www.linkedin.com/in/nahomzd/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
