@@ -2,7 +2,7 @@ require_relative './spec_helper'
 
 describe TrimmerDecorator do
   before(:each) do
-    person = Student.new(23, name:'yodit abebe nahom')
+    person = Student.new(23, name: 'yodit abebe nahom')
     @instance = TrimmerDecorator.new(person)
   end
   it 'should be an instance of TrimmerDecorator class' do

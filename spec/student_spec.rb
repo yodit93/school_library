@@ -2,7 +2,7 @@ require_relative './spec_helper'
 
 describe Student do
   before(:all) do
-    @student = Student.new(18, name:'Yodit')
+    @student = Student.new(18, name: 'Yodit')
   end
   describe '#initialize' do
     it 'should create a new instance with attributes, id, name, age, parent_permission' do
@@ -29,14 +29,13 @@ describe Student do
       classroom = Classroom.new('software')
       @student.classroom = classroom
       expect(classroom.students.length).to be 1
-      expect(classroom.students).to include (@student)
+      expect(classroom.students).to include(@student)
     end
   end
 
   describe '#play_hooky' do
     it 'should outputs ¯(ツ)/¯' do
-        expect(@student.play_hooky).to eql('¯(ツ)/¯')
+      expect(@student.play_hooky).to eql('¯(ツ)/¯')
     end
   end
-
 end

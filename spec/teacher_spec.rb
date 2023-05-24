@@ -2,7 +2,7 @@ require_relative './spec_helper'
 
 describe Teacher do
   before(:all) do
-    @teacher = Teacher.new(18,'software engineer', 'Nahom')
+    @teacher = Teacher.new(18, 'software engineer', 'Nahom')
   end
   describe '#initialize' do
     it 'should create a new instance with attributes, name, age, specialization' do
@@ -20,7 +20,6 @@ describe Teacher do
     it 'his age should be 18' do
       expect(@teacher.age).to eq(18)
     end
-
   end
 
   describe '#can_use_services' do

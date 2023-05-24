@@ -14,7 +14,7 @@ class Classroom
   end
 end
 
-student1 = Student.new(13,name:'yodit')
+student1 = Student.new(13, name: 'yodit')
 classroom = Classroom.new('soft')
 classroom.add_student(student1)
 
