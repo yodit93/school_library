@@ -1,6 +1,6 @@
 require_relative './spec_helper'
 
-describe Person do
+describe Student do
   before(:all) do
     @student = Student.new(18, name:'Yodit')
   end
